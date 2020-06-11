@@ -1,0 +1,38 @@
+import java.util.Scanner;
+abstract class Car
+{
+	abstract void drive();
+
+}
+class Honda extends Car
+{
+	void drive ()
+	{
+		System.out.println("Honda Stars");
+	}
+}
+class Lamborghini extends Car
+{
+	void drive()
+	{
+		System.out.println("lamborghini starts");
+	}
+}
+class driver 
+{
+	void driver (Car c)
+	{
+		c=new Honda();
+		c.drive();
+		c=new Lamborghini();
+		c.drive();
+	}
+}
+class  Test1
+{
+	public static void main(String[] args) 
+	{
+		Driver d=new Driver();
+		d.driver();
+	}
+}
